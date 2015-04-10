@@ -13,33 +13,35 @@ public class Unit0Tests {
      */
     public static void main (String args[]) {
       // Use main to test your methods
-      printHelloWorld();
+        System.out.println(declareAndReturnPersonNamedAda());
     }
 
     public static void printHelloWorld() {
-      System.out.println("");
+      System.out.println("Hello World");
     }
 
-    public static Object returnPrimitiveBooleanTrue() {
-      return null;
+    public static boolean returnPrimitiveBooleanTrue() {
+      return true;
     }
 
-    public static Object returnPrimitiveInt1729() {
-      return null;
+    public static int returnPrimitiveInt1729() {
+      return 1729;
     }
 
-    public static Object returnPrimitiveDoubleThreePointOneFour() {
-      return null;
+    public static double returnPrimitiveDoubleThreePointOneFour() {
+      return 3.14;
     }
 
-    public static Object returnPrimitiveCharZ() {
-        return false;
+    public static char returnPrimitiveCharZ() {
+        return 'z';
     }
 
     public static void printSumOf1Upto10UsingForLoop() {
+        for(int i = 0; i <= 10; i++);
     }
 
     public static void printSumOf1Upto10000UsingForLoop() {
+        for(int i = 0; i <= 10; i++);
     }
 
     public static boolean isOdd(int n) {
@@ -47,15 +49,26 @@ public class Unit0Tests {
     }
 
     public static boolean isMultipleOfThree(int n) {
-      return false;
+
+        if(n %3 == 0){
+            return true;
+        }
+        else
+            return false;
+
     }
 
     public static boolean isOddAndIsMultipleOfThree(int n) {
-      return false;
+        if(n % 2 == 1 && n % 3 ==0 )
+      return true;
+        else
+            return false;
     }
+
 
     public static String repeatStringXTimes(String input, int times) {
         // Given string "input" and a positive integer "times",
+
         // return a string that is equal to the input string repeated X times.
         // If "times" is 0 negative, return a blank string.
         // For example, repeatStringXTimes("potato", 5) should return "potatopotatopotatopotatopotato".
@@ -66,11 +79,17 @@ public class Unit0Tests {
         // Given string "input", return a string that stops at the first occurrence of the character 'q'.
         // For example, given the string "ubiquitous", return "ubi".
         // If the string does not contain a q, then return the empty string "".
+
+
         return "";
     }
 
     public static Person declareAndReturnPersonNamedAda() {
-      return null;
+
+        Person ada = new Person();
+
+        return ada;
+
     }
 
     public static Person declareAndReturnPersonNamedAlanTuringFromLondon() {
